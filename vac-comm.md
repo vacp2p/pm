@@ -2,7 +2,15 @@
 
 *This document is an early work in progress, and largely consists of notes that will be used to fill out a more thorough document such as [[WIP] Dagger: A Distributed Storage Network](https://hackmd.io/CDg3GXyTSbSmBQjL93hooA?both).*
 
-vac.comm provides private and decentralized communication, and is part of the Vac communication/storage/compute umbrella.
+## Overview
+
+vac.comm provides private and decentralized communication.
+
+We’re designing our network to tolerate higher than usual amounts of churn in anticipation of a large amount of mobile devices that we expect will make up the majority of the network.
+
+A noteworthy aspect of this protocol is its focus on adding economic incentives as a method for scaling the network.
+
+We take inspiration from various messaging protocols and borrow an overall modularity and extensibility design from IPFS and libp2p.
 
 ## Motivation and challenges
 
