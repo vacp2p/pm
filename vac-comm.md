@@ -1,6 +1,6 @@
 # [WIP] vac.comm aka waku/next
 
-*This document is an early work in progress, and largely consists of notes that will be used to fill out a more thorough document such as [[WIP] Dagger: A Distributed Storage Network](https://hackmd.io/CDg3GXyTSbSmBQjL93hooA?both) and/or [vacp2p.Communication - System Design & Technical Architecture](https://docs.google.com/document/d/1OkltbPr9jF1cx9O38evw-VarfKQ5L2LOsadCvV7xpZw/edit?ts=5e29c00d&pli=1#).*
+*This document is an early work in progress, and largely consists of notes that will be used to fill out a more thorough document such as [[WIP] Dagger: A Distributed Storage Network](https://hackmd.io/CDg3GXyTSbSmBQjL93hooA?both).*
 
 vac.comm provides private and decentralized communication, and is part of the Vac communication/storage/compute umbrella.
 
