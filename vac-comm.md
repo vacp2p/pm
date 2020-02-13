@@ -12,7 +12,7 @@ vac.comm provides private and decentralized communication, and is part of the Va
 
 The current challenges we experience with private and decentralized communication are often related to the fact that we are building a decentralized protocol and not one which is centralized. This one property, although large adds quite a few complexities to the protocol which we are working on resolving.
 
-Firstly, scalability of the network becomes hard. When a centralized chat service has problems handling its DAU, we simply add a new server. This is easier said than done with a decentralized protocol, adding a new node does not guarantee increase of DAU.
+Firstly, scalability of the network becomes hard. When a centralized messaging protocol has problems handling its load, we simply add a new server. This is easier said than done with a decentralized protocol, adding a new node does not guarantee increase of throughput.
 
 In a centralized application spam-resistance is easy to handle, we can simply throttle one user and be done with it, this however is not the case with decentralized messaging protocols. Additionally, currently whisper uses proof-of-work to reduce spam, which it does not really do as we need to lower the PoW so far for it to be mobile friendly that it is easy to spam the network yet again.
 
