@@ -78,7 +78,7 @@ These are rough notes of things we currently know and don't know. They should be
 1. Research existing projects such as:
  - Swarm
  - IPFS/Filecoin
-        BitTorrent
+ - BitTorrent
 
 2. Research relevant academic literature
 
