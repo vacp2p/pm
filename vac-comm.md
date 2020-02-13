@@ -76,7 +76,7 @@ These are rough notes of things we currently know and don't know. They should be
 **Overlap / in conjunction with Dagger priorities:**
 
 1. Research existing projects such as:
-        Swarm
+ - Swarm
         IPFS/Filecoin
         BitTorrent
 
