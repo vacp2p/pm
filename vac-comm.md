@@ -4,12 +4,21 @@
 
 vac.comm provides private and decentralized communication, and is part of the Vac communication/storage/compute umbrella.
 
-## Motivation and challenges
+## Motivation 
 
-**Challenges being addressed:**
-- scalability of the network
-- incentived infrastructure and spam-resistance
-- build with resource restricted devices in mind, including nodes being mostly offline
+@TODO
+
+### Challenges
+
+The current challenges we experience with private and decentralized communication are often related to the fact that we are building a decentralized protocol and not one which is centralized. This one property, although large adds quite a few complexities to the protocol which we are working on resolving.
+
+Firstly, scalability of the network becomes hard. When a centralized chat service has problems handling its DAU, we simply add a new server. This is easier said than done with a decentralized protocol, adding a new node does not guarantee increase of DAU.
+
+In a centralized application spam-resistance is easy to handle, we can simply throttle one user and be done with it, this however is not the case with decentralized messaging protocols. Additionally, currently whisper uses proof-of-work to reduce spam, which it does not really do as we need to lower the PoW so far for it to be mobile friendly that it is easy to spam the network yet again.
+
+In order to add a large amount of participants actively supporting the network, we need to somehow incentivize those users.
+
+Finally, resource restricted devices are our main user base. Nodes are mostly offline, which is not an issue for a centralized messaging protocol where all messages are stored on a server to later be downloaded by a client in order to read. How do we guarantee that messages reach their destination even if it is mostly offline?
 
 ## System design, technical architecture and rationale
 
