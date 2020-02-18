@@ -65,9 +65,58 @@ These are rough notes of things we currently know and don't know. They should be
 
 ## Timeline and milestones
 
-To be determined in more detail. Below is outlined what the most immediate next steps are for Waku, in addition to write-ups and general research work related to things above.
+### February - March 2020
 
-**On Waku/next and current approach:**
-- Write an experimental Kademlia implementation for nim-libp2p, with the goal of (a) increasing tacit knowledge of Kademlia/libp2p/Nim and (b) acting as a base layer for upcoming applied research work
-- Upcoming applied research work includes: Feasibility study of neighborhood routing; accounting and incentivization simulation for adaptive nodes; PoC for offline/storage interface; node capabilities and discovery beyond DNS
-- Continue formulating a plan with timeline, priorities and milestones, both for vac.comm as well as in conjunction with vac.storage and in terms of supporting Core app needs
+**Ongoing:**
+
+1. Write an experimental Kademlia implementation for nim-libp2p, with the goal of
+  - increasing tacit knowledge of Kademlia/libp2p/Nim
+  - acting as a base layer for upcoming applied research work
+
+2. Do research in conjunction with Dagger priorities as outlined below
+
+**Outstanding:**
+
+1. Get consensus on strategy, direction for most immediate users (Vac meetup, Dagger and Status Core)
+
+2. Create a detailed timeline for implementing the project as a deliverable
+
+**Overlap / in conjunction with Dagger priorities:**
+
+1. Research existing projects such as:
+ - Swarm
+ - IPFS/Filecoin
+ - BitTorrent
+
+2. Research relevant academic literature
+
+3. Validating existing economic models as well as exploring our own
+
+### March - June 2020
+
+As an initial goal, we will focus on building an MVP with a limited subset of features such as:
+
+- Send messages to a single point
+- Send messages to a neighborhood
+- Find nodes and content
+
+This will require a few components in place:
+
+**Completed:**
+
+- p2p networking stack
+    we have an initial implementation of libp2p in Nim, this should be enough to start development, but it will be improved and augmented with new features on an ongoing basis
+
+**Outstanding:**
+
+- A wire protocol to
+    Coordinate with other nodes
+    Send and receive messages to one and multiple nodes
+
+- Feasibility study of neighborhood routing
+
+- Accounting and incentivization simulation for adaptive nodes
+
+- PoC for offline/storage interface
+
+- Node capabilities and discovery beyond DNS
