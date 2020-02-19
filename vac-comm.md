@@ -6,19 +6,23 @@ vac.comm provides private and decentralized communication, and is part of the Va
 
 ## Motivation 
 
-@TODO
+Unlike many other secure messaging applications, our goal is not to have a tightly coupled set of protocols, nor is it to reinvent the wheel. Instead, we aim to provide options at each layer in the stack, and build on the shoulders of giants, putting a premimum on interoperability. It’s similar in philosophy to projects such as [libp2p](https://libp2p.io) or [Substrate](https://www.parity.io/substrate/) in that regard. Each choice comes with different trade-offs, and these look different for different applications.
+
+The protocols we work on are pure p2p, and aim to minimize centralization. This too is in opposition to many initiatives in the secure messaging space.
+
+Outside of traditional notions of secure messaging, such as ensuring end to end encryption, forward secrecy, avoiding MITM-attacks, etc, we are also concerned with two other forms of secure messaging. We call these private messaging and censorship-resistance. Private messaging means viewing privacy as a security property, with all that entails. Censorship resistance ties into being p2p, but also in terms of allowing for transports and overlays that can’t easily be censored by port blocking, traffic analysis, and similar.
 
 ### Challenges
 
-The current challenges we experience with private and decentralized communication are often related to the fact that we are building a decentralized protocol and not one which is centralized. This one property, although large adds quite a few complexities to the protocol which we are working on resolving.
+The challenges we experience with private and decentralized communication directly stem from fact that we are building a protocol which is not centralized. This property, adds quite a few complexities to the protocol which we are working on resolving.
 
-Firstly, scalability of the network becomes hard. When a centralized messaging protocol has problems handling its load, we simply add a new server. This is easier said than done with a decentralized protocol, adding a new node does not guarantee increase of throughput.
+**Scalability** is a large challenge we face. When a centralized messaging protocol has problems handling its load, we simply add a new server. This is easier said than done with a decentralized protocol, adding a new node does not guarantee increase of throughput.
 
-In a centralized application spam-resistance is easy to handle, we can simply throttle one user and be done with it, this however is not the case with decentralized messaging protocols. Additionally, currently whisper uses proof-of-work to reduce spam, which it does not really do as we need to lower the PoW so far for it to be mobile friendly that it is easy to spam the network yet again.
+**Spam-resistance** is another, in a centralized application spam-resistance is easy to handle, we can simply throttle one user and be done with it. This however is not the case with decentralized messaging protocols. Additionally, currently whisper uses proof-of-work to reduce spam, which does not actually prevent spam as we need to lower the PoW so far for it to be mobile friendly that it is easy to spam the network yet again.
 
 In order to add a large amount of participants actively supporting the network, we need to somehow incentivize those users.
 
-Finally, resource restricted devices are our main user base. Nodes are mostly offline, which is not an issue for a centralized messaging protocol where all messages are stored on a server to later be downloaded by a client in order to read. How do we guarantee that messages reach their destination even if it is mostly offline?
+**Resource restricted devices** are our main user base. Nodes are mostly offline, which is not an issue for a centralized messaging protocol where all messages are stored on a server to later be downloaded by a client in order to read. How do we guarantee that messages reach their destination even if it is mostly offline?
 
 ## System design, technical architecture and rationale
 
